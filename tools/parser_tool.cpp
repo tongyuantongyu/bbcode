@@ -4,7 +4,9 @@
 
 #include <iostream>
 #include <iomanip>
+#include <array>
 #include <fstream>
+
 #include "parser.h"
 #include "cassert"
 

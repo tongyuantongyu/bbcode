@@ -80,7 +80,8 @@ class Lexer {
   void send_buffer(LexType type);
  public:
   Lexer() : Lexer([](const auto &&) {}) {}
-  explicit Lexer(auto callback)
+  template<class T>
+  explicit Lexer(T callback)
       : cursor(Trie::get_cursor()),
         callback(callback),
         left_tag(false),

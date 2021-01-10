@@ -6,6 +6,7 @@
 #include "grammar.h"
 
 #include <utility>
+#include <iterator>
 
 namespace bbcode::trie {
 

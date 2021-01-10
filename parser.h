@@ -29,7 +29,7 @@ struct Node {
   std::string data;
 
   // for Literal and Newline, this should always been empty;
-  std::deque<Node> children;
+  std::vector<Node> children;
 };
 
 enum ParserState {
@@ -66,7 +66,8 @@ class Parser {
   void close();
  public:
   Parser() : Parser([](const auto &&) {}, [](const auto &&) {}) {}
-  Parser(auto callback, auto emitter) :
+  template <class T1, class T2>
+  Parser(T1 callback, T2 emitter) :
       stack{Node {
         .type = NodeType::Literal,
         .line = 0,

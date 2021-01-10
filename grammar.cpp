@@ -6,6 +6,7 @@
 #include <limits>
 #include <mutex>
 #include <cmath>
+#include <algorithm>
 #include "grammar.h"
 
 namespace bbcode::grammar {

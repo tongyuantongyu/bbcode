@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <variant>
+#include <array>
 #include "lexer.h"
 
 using namespace bbcode::lexer;

@@ -4,6 +4,7 @@
 
 #include "parser.h"
 #include <cassert>
+#include <algorithm>
 
 namespace bbcode::parser {
 
